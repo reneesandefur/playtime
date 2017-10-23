@@ -94,6 +94,8 @@ GEM
     ffi (1.9.18)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     hashdiff (0.3.4)
@@ -278,6 +280,7 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   font-awesome-sass
+  friendly_id (~> 5.1.0)
   httparty
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3.1)
