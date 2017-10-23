@@ -3,7 +3,7 @@ class WishlistsController < ApplicationController
 
   def show
     skip_authorization
-    @wishlist = Wishlist.includes(wishlist_items: :item).friendly.find(params[:id])
+    @wishlist = Wishlist.includes(wishlist_items: :item).friendly.find(params[:id]) #added friendly do find by slug
     @site_managers = @wishlist.users
     @wishlist_items = @wishlist.wishlist_items.priority_order
   end

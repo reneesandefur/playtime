@@ -21,6 +21,7 @@ class Wishlist < ApplicationRecord
   extend FriendlyId
   friendly_id :name, use: [:slugged, :history]
   
+  #generate new slug when wishlist name is changed
   def should_generate_new_friendly_id?
     slug.blank? || name_changed?
   end
